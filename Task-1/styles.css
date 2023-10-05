@@ -338,3 +338,29 @@ html::-webkit-scrollbar {
   }
   /* product end */
   
+
+   /* gallary  styling start */
+   #gallary {
+    width: 100%;
+  }
+  #gallary h1 {
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    font-weight: bold;
+  }
+  #gallary h1 span {
+    color: #b2744c;
+  }
+  #gallary .card {
+    border-radius: 10px;
+  
+  }
+  #gallary .card img {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* #gallary .card img:hover {
+    transform: translateY(-10px);
+  } */
+  /* gallary styling end */
