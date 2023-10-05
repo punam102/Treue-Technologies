@@ -300,4 +300,41 @@ html::-webkit-scrollbar {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   /* menu  end*/
+
+  
+   /* product  start*/
+   .product {
+    width: 100%;
+    background: #f7f5f2;
+    font-family: "Roboto", sans-serif;
+  }
+  .heading4 {
+    text-align: center;
+    color: #291407;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    border-bottom: 2px solid #b2744c;
+  }
+  #container3 {
+    margin-top: 30px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .product h3 {
+    text-align: center;
+    color: #2f190b;
+    font-size: 23px;
+  }
+  .product p {
+    color: #b2744c;
+    padding-top: 10px;
+  }
+  .product p span {
+    float: right;
+    cursor: pointer;
+  }
+  /* product end */
   
