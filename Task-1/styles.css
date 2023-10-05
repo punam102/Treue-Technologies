@@ -447,3 +447,34 @@ html::-webkit-scrollbar {
   }
   /* contact details */
   
+
+
+  /* blogs style */
+  .blogs {
+    width: 100%;
+    background: #f7f5f2;
+  }
+  .blogs h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+  }
+  .blogs h1 span {
+    color: #b2744c;
+  }
+  .blogs .container {
+    margin-top: 60px;
+  }
+  .blogs h5 {
+    color: #b2744c;
+  }
+  #blogbtn {
+    width: 200px;
+    height: 36px;
+    border: none;
+    color: white;
+    background: #b2744c;
+    cursor: pointer;
+  }
+  /* blogs style */
