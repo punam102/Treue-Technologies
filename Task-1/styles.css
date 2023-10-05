@@ -152,4 +152,107 @@ html::-webkit-scrollbar {
   /* about */
  
   
+  /* top cards */
+.top-cards {
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+    font-family: "Roboto", sans-serif;
+  }
+  .heading2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading2 span {
+    color: #b2744c;
+  }
+  .top-cards .container {
+    margin-top: 30px;
+  }
+  .top-cards .card {
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .top-cards .card img {
+    border-radius: 10px;
+  }
+  .top-cards .card h3 {
+    text-align: center;
+    padding-top: 78px;
+    color: white;
+  }
+  .top-cards .card:hover {
+    transform: translateY(-10px);
+  }
+  @media screen and (max-width: 767px) {
+    .top-cards {
+      height: 170vh;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .top-cards {
+      height: 150vh;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .top-cards {
+      height: 120vh;
+    }
+  }
+  /* top cards */
   
+
+   /* top cards */
+   .top-cards {
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+    font-family: "Roboto", sans-serif;
+  }
+  .heading2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading2 span {
+    color: #b2744c;
+  }
+  .top-cards .container {
+    margin-top: 30px;
+  }
+  .top-cards .card {
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .top-cards .card img {
+    border-radius: 10px;
+  }
+  .top-cards .card h3 {
+    text-align: center;
+    padding-top: 78px;
+    color: white;
+  }
+  .top-cards .card:hover {
+    transform: translateY(-10px);
+  }
+  @media screen and (max-width: 767px) {
+    .top-cards {
+      height: 170vh;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .top-cards {
+      height: 150vh;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .top-cards {
+      height: 120vh;
+    }
+  }
+  /* top cards */
