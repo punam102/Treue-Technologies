@@ -1,3 +1,6 @@
+const quotes = fetch("./data.json")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 
 let currentQuoteIndex = 0;
 
