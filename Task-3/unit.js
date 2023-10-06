@@ -6,25 +6,27 @@ function convert() {
   switch (unit) {
     case "meters":
       convertedLength = length * 100;
-      unitText = 'Meters';
+      unitText = "Meters";
       break;
     case "centimeters":
       convertedLength = length;
-      unitText = 'Centimeters';
+      unitText = "Centimeters";
       break;
     case "kilometers":
       convertedLength = length * 100000;
-      unitText = 'Kilometers';
+      unitText = "Kilometers";
       break;
     case "millimeters":
       convertedLength = length * 0.1;
-      unitText = 'Millimeters';
+      unitText = "Millimeters";
       break;
     default:
       convertedLength = length;
-      unitText = 'Unknown Unit';
+      unitText = "Unknown Unit";
   }
 
-  document.getElementById('result').innerText = `Converted Length: ${convertedLength} ${unitText}
+  document.getElementById(
+    "result"
+  ).innerText = `Converted Length: ${convertedLength} ${unitText}
   `;
 }
