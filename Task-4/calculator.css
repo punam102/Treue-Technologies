@@ -54,14 +54,14 @@ button {
   background: #262834;
   color: #ffffff;
 }
-.buttonopt {
-  color: white;
-  background-color: teal;
+button:hover{
+    background-color:#fb7c14;
+    color: #ffffff;
+
 }
-.btndlt {
-  border-radius: none;
-  width: 45%;
-  background-color: teal;
+.btnopt{
+    color: white;
+    background-color: teal;
 }
 .equalBtn {
   border-radius: none;
