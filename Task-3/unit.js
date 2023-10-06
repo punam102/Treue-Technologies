@@ -6,6 +6,7 @@ function convert() {
   switch (unit) {
     case "meters":
       convertedLength = length * 100;
+      unitText = 'Meters';
       break;
     case "centimeters":
       convertedLength = length;
@@ -20,7 +21,6 @@ function convert() {
       convertedLength = length;
   }
 
-  document.getElementById(
-    "result"
-  ).innerText = `Converted Length: ${convertedLength} centimeters`;
+  document.getElementById('result').innerText = `Converted Length: ${convertedLength} ${unitText}
+  `;
 }
