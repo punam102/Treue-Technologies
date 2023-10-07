@@ -62,3 +62,25 @@
     }
   }
   
+  .highlight1 {
+    color: seagreen; /* or any color you prefer */
+  }
+
+  .highlight2 {
+    color: seagreen; /* or any color you prefer */
+  }
+  .highlight3 {
+    color: orangered; /* or any color you prefer */
+  }
+  .highlight4 {
+    color: orangered; /* or any color you prefer */
+  }
+  .highlight5 {
+    color: seagreen; /* or any color you prefer */
+  }
+  
+  .tittle{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
