@@ -2,7 +2,6 @@ let isLightboxOpen = false;
 let currentImageIndex = 0;
 
 function openLightbox() {
-  // Code to open the lightbox and display the image at currentImageIndex
   isLightboxOpen = true;
 }
 
@@ -27,22 +26,22 @@ function navigatePrev() {
   }
 }
 
-// Call these functions based on your UI interactions
-// For example, when clicking on an image thumbnail
-thumbnail.addEventListener('click', () => {
+// Call these functions based on our UI interactions
+//  clicking on an image thumbnail
+thumbnail.addEventListener("click", () => {
   openLightbox();
 });
 
-// For the close button in the lightbox
-closeButton.addEventListener('click', () => {
+//  close button in the lightbox
+closeButton.addEventListener("click", () => {
   closeLightbox();
 });
 
-// For the next and previous navigation buttons
-nextButton.addEventListener('click', () => {
+//  next and previous navigation buttons
+nextButton.addEventListener("click", () => {
   navigateNext();
 });
 
-prevButton.addEventListener('click', () => {
+prevButton.addEventListener("click", () => {
   navigatePrev();
 });
