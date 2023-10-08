@@ -4,7 +4,6 @@ let currentImageIndex = 0;
 function openLightbox() {
   isLightboxOpen = true;
 }
-
 function closeLightbox() {
   // Code to close the lightbox
   isLightboxOpen = false;

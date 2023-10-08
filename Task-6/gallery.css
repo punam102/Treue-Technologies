@@ -21,11 +21,13 @@ body {
   grid-gap: 20px;
 }
 
+
 .grid-gallery .grid-item {
   position: relative;
   background-color: #efefef;
   overflow: hidden;
 }
+
 
 .grid-gallery .grid-item img {
   width: 100%;
