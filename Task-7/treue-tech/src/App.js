@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import RegistrationForm from './components/RegistrationForm';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>Punam's App</h1>
+      <h1>User Registration</h1>
+      <RegistrationForm/>
       </header>
     </div>
   );
