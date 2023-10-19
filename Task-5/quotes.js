@@ -1,31 +1,58 @@
-let quotes; // Variable to store the fetched quotes
+const quoteText = document.querySelector(".quote"),
+quoteBtn = document.querySelector("button"),
+authorName = document.querySelector(".name"),
+speechBtn = document.querySelector(".speech"),
+copyBtn = document.querySelector(".copy"),
+twitterBtn = document.querySelector(".twitter"),
+synth = speechSynthesis;
 
-fetch("./data.json")
-  .then((response) => response.json())
-  .then((json) => {
-    quotes = json; // Assign fetched quotes to the quotes variable
-    displayQuote(); // Display the initial quote once the data is available
-  });
+let currentQuoteIndex = 0; // Variable to keep track of the current quote index
+let quotesData = null; // Variable to store the JSON data
 
-let currentQuoteIndex = 0;
+function randomQuote(){
+  quoteBtn.classList.add("loading");
+  quoteBtn.innerText = "Loading Quote...";
+  
+  fetch("data.json")
+    .then(response => response.json())
+    .then(data => {
+      quotesData = data; // Store the data in the quotesData variable
+      updateQuote();
+      quoteBtn.classList.remove("loading");
+      quoteBtn.innerText = "New Quote";
+    })
+    .catch(error => {
+      console.error("Error fetching data:", error);
+    });
+}
 
-function nextQuote() {
-  if (quotes) {
-    currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-    displayQuote();
+function updateQuote() {
+  const quote = quotesData[currentQuoteIndex];
+
+  if (quote) {
+    quoteText.innerText = quote.content;
+    authorName.innerText = quote.author;
+
+    // Increment the index for the next quote, and reset to 0 if it goes beyond the array length
+    currentQuoteIndex = (currentQuoteIndex + 1) % quotesData.length;
   }
 }
 
-
-function displayQuote() {
-  const quoteElement = document.getElementById("quote");
-  const authorElement = document.getElementById("author");
-
-  if (quotes) {
-    quoteElement.textContent = quotes[currentQuoteIndex].quote;
-    authorElement.textContent = `- ${quotes[currentQuoteIndex].author}`;
+speechBtn.addEventListener("click", () => {
+  if (!quoteBtn.classList.contains("loading")) {
+    let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
+    synth.speak(utterance);
+    setInterval(() => {
+      !synth.speaking ? speechBtn.classList.remove("active") : speechBtn.classList.add("active");
+    }, 10);
   }
-}
+});
 
-// Display the initial quote
-displayQuote();
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(quoteText.innerText);
+});
+
+quoteBtn.addEventListener("click", randomQuote);
+
+// Call randomQuote to load the initial quote
+randomQuote();
