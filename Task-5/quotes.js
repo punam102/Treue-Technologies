@@ -38,6 +38,7 @@ function updateQuote() {
   }
 }
 
+
 speechBtn.addEventListener("click", () => {
   if (!quoteBtn.classList.contains("loading")) {
     let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorName.innerText}`);
